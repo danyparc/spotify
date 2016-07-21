@@ -1,33 +1,93 @@
+$spotify-green: #2ebd59
+$grey-material: #212121
+$blue-grey-material: #455A64
+$light-green: #689F38
+
 *
   margin: 0px
   padding: 0px
-  font-family: "Trebuchet MS", Helvetica
+  font-family: 'Roboto',"Trebuchet MS", Helvetica
 
 body
   background: #000
   color: #fff
 
+.container
+  display: flex
+  align-items: center
+  justify-content: center
+.logo
+  display: flex
+  justify-content: center
+  padding: 1em
+  width: 25%
+  img
+    margin-right: 5px
+    height: 30px
+
+.description
+  width: 75%
+  color: #ccc
+  font-size: .8em
+
+
 section.spotify-player
   display: flex
-  margin: auto
+
   .search
-    padding: 10px
-    background: #00796B
+    padding: 5px
+    width: 25%
+    display: flex
+    justify-content: center
     form
+      width: 100%
       input
-        border-radius: 3px
+        border-radius: 5px
+        border: none
+        padding: .5em
         text-decoration: none
       button
-        background: #008000
+        background: $spotify-green
         border: none
         color: white
         padding: .5em
         border-radius: 3px
+      button:hover
+        background: $light-green
+        border: none
+        font-weight: bold
+        color: white
+        padding: .5em
+        border-radius: 3px
+
+  .results
+    .song-element:hover, .song-element:first-child
+      //como el primer elemento se reproduce, debe quedar en gris
+      background-color: $grey-material
+      border-radius: 5px
+    width: 50%
+    font-size: larger
+    display: inline-table
+    a
+      display: inline-flex
+      padding: .5em
+      vertical-align: middle
+      width: 100%
+      i
+        margin-right: 5px
+      span.title
+        margin-left: 2pt
+        margin-right: 5pt
+        font-weight: bold
+      span.artist
+        color: #ccc
+        margin-left: 2pt
+        margin-right: 2pt
+
   .player
-    .results
-      a
-        span.title
-        span
+    width: 25%
+    padding: 2em
+    display: flex
     .song-detail
       .header
         img
