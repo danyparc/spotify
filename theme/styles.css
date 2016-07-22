@@ -77,7 +77,44 @@ section.spotify-player {
         margin-right: 2pt; }
   section.spotify-player .player {
     width: 25%;
-    padding: 2em;
-    display: flex; }
+    margin: 2%;
+    display: flex;
+    font-size: larger; }
+    section.spotify-player .player .song-detail .header {
+      text-align: center; }
+      section.spotify-player .player .song-detail .header .imagen {
+        width: 100%;
+        text-align: center; }
+        section.spotify-player .player .song-detail .header .imagen img {
+          width: 60%;
+          margin-right: 4%; }
+        section.spotify-player .player .song-detail .header .imagen img:hover {
+          -webkit-filter: blur(2px);
+          filter: blur(2px);
+          width: 61%;
+          margin-right: 4%; }
+      section.spotify-player .player .song-detail .header .detalles {
+        width: 100%;
+        text-align: center; }
+        section.spotify-player .player .song-detail .header .detalles span.title {
+          width: 100%;
+          display: inline-block; }
+        section.spotify-player .player .song-detail .header .detalles span {
+          width: 100%;
+          display: inline-block; }
+        section.spotify-player .player .song-detail .header .detalles a {
+          width: 100%;
+          display: inline-block;
+          color: #2ebd59; }
+
+footer {
+  position: fixed;
+  background-color: black;
+  bottom: 0;
+  height: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

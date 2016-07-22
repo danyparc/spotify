@@ -19,16 +19,20 @@
       </div>
     </div>
     <!--<div class="player" ng-if="$ctrl.playlist">-->
-    <div class="player">
+    <div class="player" ng-if="$ctrl.playlist">
       <div class="song-detail">
           <div class="header">
-              <img ng-src="{{$ctrl.song.album.images[2].url}}"/>
-              <span class="title">{{$ctrl.song.name}}</span>
-              <span>Duration: {{$ctrl.milliseconds($ctrl.song.duration_ms) }}</span>
-              <span>Popularity: {{$ctrl.song.popularity}}</span>
-              <span>Album: {{$ctrl.song.album.name}}</span>
-              <span>{{$ctrl.song.artists[0].name}}</span>
-              <a target="_blank" ng-href="{{ $ctrl.song.external_urls.spotify}}">Abrir en Spotify</a>
+              <div class="imagen">
+                <img ng-src="{{$ctrl.song.album.images[2].url}}"/>
+              </div>
+              <div class="detalles">
+                <span class="title">{{$ctrl.song.name}}</span>
+                <span>Album: {{$ctrl.song.album.name}}</span>
+                <span>Duration: {{$ctrl.milliseconds($ctrl.song.duration_ms) }}</span>
+                <span>Popularity: {{$ctrl.song.popularity}}</span>
+                <span>{{$ctrl.song.artists[0].name}}</span>
+                <a target="_blank" ng-href="{{ $ctrl.song.external_urls.spotify}}">Abrir en Spotify</a>
+              </div>
           </div>
       </div>
     </div>

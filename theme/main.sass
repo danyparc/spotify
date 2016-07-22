@@ -86,11 +86,43 @@ section.spotify-player
 
   .player
     width: 25%
-    padding: 2em
+    margin: 2%
     display: flex
+    font-size: larger
     .song-detail
       .header
-        img
-        span.title
-        span
-        a
+        text-align: center
+        .imagen
+          width: 100%
+          text-align: center
+          img
+            width: 60%
+            margin-right: 4%
+          img:hover
+            -webkit-filter: blur(2px)
+            filter: blur(2px)
+            width: 61%
+            margin-right: 4%
+        .detalles
+          width: 100%
+          text-align: center
+          span.title
+            width: 100%
+            display: inline-block
+          span
+            width: 100%
+            display: inline-block
+          a
+            width: 100%
+            display: inline-block
+            color: $spotify-green
+
+footer
+  position: fixed
+  background-color: black
+  bottom: 0
+  height: 5%
+  padding-top: 10px
+  padding-bottom: 10px
+  text-align: center
+  width: 100%
